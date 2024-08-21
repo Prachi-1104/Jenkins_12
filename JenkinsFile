@@ -1,0 +1,22 @@
+pipeline
+{
+    agent any
+
+    stages
+    {
+        stage('Hello')
+        {
+            steps
+            {
+                bat 'javac '
+            }
+        }
+        stage('FAMT')
+        {
+            steps
+            {
+                echo 'Welcome to FAMT!'
+            }
+        }
+    }
+}
